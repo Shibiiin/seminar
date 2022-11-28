@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'package:seminar/main.dart';
+import 'package:seminar/splash.dart';
 
 void main()
 {
@@ -31,7 +31,8 @@ child: const Center(
    return MaterialApp(
      debugShowCheckedModeBanner: false,
     home: Scaffold(
-      body: LiquidSwipe(
+      body:
+      LiquidSwipe(
         pages:pages,
         slideIconWidget: const Icon(Icons.arrow_back, size: 50),
         enableLoop: true,
@@ -42,8 +43,7 @@ child: const Center(
         disableUserGesture: false,
         fullTransitionValue: 800,
       ),
-
-    ),
+      ),
    );
   }
 
